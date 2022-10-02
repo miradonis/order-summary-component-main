@@ -1,0 +1,162 @@
+/*==========================
+## Colors 
+### Primary
+Pale blue: hsl(225, 100%, 94%)  
+Bright blue: hsl(245, 75%, 52%) 
+### Neutral 
+Very pale blue: hsl(225, 100%, 98%) 
+Desaturated blue: hsl(224, 23%, 55%) 
+Dark blue: hsl(223, 47%, 23%)
+
+- Font size (paragraph): 16px 
+Family: [Red Hat Display](https: //fonts.google.com/specimen/Red+Hat+Display)
+- Weights: 500, 700, 900
+============================*/
+
+/*=============================
+            GENERAL
+==============================*/
+
+@font-face {
+    font-family: RedHatDisplay-Black;
+    src: url("./fonts/RedHatDisplay-Black.ttf");
+}
+
+@font-face {
+    font-family: RedHatDisplay-Bold;
+    src: url("./fonts/RedHatDisplay-Bold.ttf");
+}
+
+@font-face {
+    font-family: RedHatDisplay-Medium;
+    src: url("./fonts/RedHatDisplay-Medium.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 40vh;
+    background-image: url("./images/pattern-background-desktop.svg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*=============================
+            HEADER
+==============================*/
+body section {
+    background-color: #E0E8FF;
+    height: 80vh;
+    width: 23vw;
+    margin: 5vh auto 0 auto;
+    border-radius: 25px;
+}
+
+/*=============================
+            HEADER
+==============================*/
+body section header {
+    height: 25vh;
+    background-image: url("./images/illustration-hero.svg");
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+/*=============================
+        HEADING AND TEXT
+==============================*/
+
+body section article {
+    width: 16vw;
+    margin: 0 auto;
+    padding-top: 4vh;
+    text-align: center;
+}
+
+body section article h1 {
+    text-align: center;
+    font-family: RedHatDisplay-Bold;
+    font-size: 2rem;
+    padding-bottom: 2vh;
+}
+
+body section article p {
+    font-family: RedHatDisplay-Medium;
+    color: hsl(224, 23%, 55%);
+    line-height: 3vh;
+}
+
+/*=============================
+        PRICE AND LINK
+==============================*/
+
+.price__link {
+    background-color: #F8F9FE;
+    border-radius: 15px;
+    margin-top: 3vh;
+    height: 12vh;
+    width: 18vw;
+    display: flex;
+    text-align: center;
+    padding: 0;
+}
+
+.price__link img {
+    height: 5vh;
+    margin: 3.5vh 0 0 1vw;
+}
+
+.price__link div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 1vw;
+}
+
+.price__link div p:nth-of-type(1) {
+    font-family: RedHatDisplay-Black;
+    color: rgb(51, 51, 51);
+}
+
+.price__link a {
+    align-self: center;
+    margin-left: 4vw;
+    font-family: RedHatDisplay-Bold;
+    font-size: 1rem;
+    color: hsl(245, 75%, 52%);
+}
+
+/*=============================
+            BUTTON AND REST
+==============================*/
+
+.btn__cancel {
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vh;
+}
+
+.btn__cancel button {
+    background-color: hsl(245, 75%, 52%);
+    font-family: RedHatDisplay-Bold;
+    color: white;
+    padding: 1.5vh 5.3vw 1.5vh 5.3vw;
+    border: 1px solid blue;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px  hsla(245, 75%, 52%, 0.729);
+}
+
+.btn__cancel p {
+    margin-top: 3vh;
+    font-family: RedHatDisplay-Bold;
+    color: hsl(224, 23%, 55%);
+}
