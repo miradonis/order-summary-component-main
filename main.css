@@ -133,6 +133,11 @@ body section article p {
     color: hsl(245, 75%, 52%);
 }
 
+.price__link a:hover {
+    text-decoration: none;
+    color: #928ADC;
+}
+
 /*=============================
             BUTTON AND REST
 ==============================*/
@@ -155,8 +160,19 @@ body section article p {
     box-shadow: 5px 5px 20px  hsla(245, 75%, 52%, 0.729);
 }
 
-.btn__cancel p {
+.btn__cancel button:hover {
+    background-color: #766CF1;
+    border: 1px solid #766CF1;
+}
+
+.btn__cancel a {
     margin-top: 3vh;
     font-family: RedHatDisplay-Bold;
     color: hsl(224, 23%, 55%);
+    text-decoration: none;
+}
+
+.btn__cancel a:hover {
+    color: black;
+    text-decoration: none;
 }
